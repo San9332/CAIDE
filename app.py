@@ -106,13 +106,13 @@ def get_face_app():
 
 app = FastAPI(title="CAIDE Matcher API")
 
-
-
-
 @app.get("/")
 def root():
     return {"status": "ok", "message": "CAIDE matcher API is running"}
 
+@app.head("/")
+def root_head():
+    return
 
 @app.post("/match")
 async def match_face(file: UploadFile = File(...)):
