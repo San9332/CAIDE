@@ -1,0 +1,12 @@
+{
+  "id": "P19",
+  "name": "Shohei Ohtani",
+  "gender": "Male",
+  "domain": "Sports",
+  "nationality": "Japan",
+  "date_of_birth": "1994-07-05",
+  "profession": ["Baseball Player"],
+  "known_for": ["Two-way MLB player"],
+  "affiliations": ["LA Dodgers"],
+  "text_profile": "Unique MLB player excelling as both pitcher and hitter."
+}

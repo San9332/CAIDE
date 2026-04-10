@@ -1,0 +1,12 @@
+{
+  "id": "P60",
+  "name": "Shakira",
+  "gender": "Female",
+  "domain": "Music",
+  "nationality": "Colombia",
+  "date_of_birth": "1977-02-02",
+  "profession": ["Singer", "Performer"],
+  "known_for": ["Latin pop global reach"],
+  "affiliations": ["Sony Music"],
+  "text_profile": "International music icon known for Latin pop crossover success."
+}

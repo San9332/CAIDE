@@ -1,0 +1,12 @@
+{
+  "id": "P54",
+  "name": "Katie Ledecky",
+  "gender": "Female",
+  "domain": "Sports",
+  "nationality": "USA",
+  "date_of_birth": "1997-03-17",
+  "profession": ["Swimmer"],
+  "known_for": ["Olympic gold medals"],
+  "affiliations": ["USA Swimming"],
+  "text_profile": "Dominant long-distance swimmer with multiple Olympic and world records."
+}

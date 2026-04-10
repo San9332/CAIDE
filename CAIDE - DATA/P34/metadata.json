@@ -1,0 +1,12 @@
+{
+  "id": "P34",
+  "name": "Justin Trudeau",
+  "gender": "Male",
+  "domain": "Politics",
+  "nationality": "Canada",
+  "date_of_birth": "1971-12-25",
+  "profession": ["Politician"],
+  "known_for": ["Prime Minister of Canada"],
+  "affiliations": ["Liberal Party"],
+  "text_profile": "Canadian Prime Minister known for progressive policies and global diplomacy."
+}

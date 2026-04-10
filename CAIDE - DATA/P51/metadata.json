@@ -1,0 +1,12 @@
+{
+  "id": "P51",
+  "name": "Caster Semenya",
+  "gender": "Female",
+  "domain": "Sports",
+  "nationality": "South Africa",
+  "date_of_birth": "1991-01-07",
+  "profession": ["Runner"],
+  "known_for": ["Olympic medals"],
+  "affiliations": ["Athletics South Africa"],
+  "text_profile": "Middle-distance runner known for Olympic success and global discussions on athletics policy."
+}

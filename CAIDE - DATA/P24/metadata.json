@@ -1,0 +1,12 @@
+{
+  "id": "P24",
+  "name": "Ed Sheeran",
+  "gender": "Male",
+  "domain": "Music",
+  "nationality": "UK",
+  "date_of_birth": "1991-02-17",
+  "profession": ["Singer", "Songwriter"],
+  "known_for": ["Shape of You", "Global tours"],
+  "affiliations": ["Asylum Records"],
+  "text_profile": "One of the best-selling music artists known for acoustic pop and global hits."
+}

@@ -1,0 +1,12 @@
+{
+  "id": "P68",
+  "name": "Angela Merkel",
+  "gender": "Female",
+  "domain": "Politics",
+  "nationality": "Germany",
+  "date_of_birth": "1954-07-17",
+  "profession": ["Politician"],
+  "known_for": ["Chancellor of Germany"],
+  "affiliations": ["CDU"],
+  "text_profile": "Long-serving German Chancellor known for stability and leadership in Europe."
+}

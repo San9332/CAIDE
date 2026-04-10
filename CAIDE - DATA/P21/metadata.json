@@ -1,0 +1,12 @@
+{
+  "id": "P21",
+  "name": "Drake",
+  "gender": "Male",
+  "domain": "Music",
+  "nationality": "Canada",
+  "date_of_birth": "1986-10-24",
+  "profession": ["Rapper", "Singer"],
+  "known_for": ["Billboard hits", "Streaming dominance"],
+  "affiliations": ["OVO Sound"],
+  "text_profile": "One of the most influential artists in modern hip-hop and global streaming culture."
+}

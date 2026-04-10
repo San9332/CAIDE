@@ -1,0 +1,12 @@
+{
+  "id": "P33",
+  "name": "Emmanuel Macron",
+  "gender": "Male",
+  "domain": "Politics",
+  "nationality": "France",
+  "date_of_birth": "1977-12-21",
+  "profession": ["Politician"],
+  "known_for": ["President of France"],
+  "affiliations": ["La République En Marche!"],
+  "text_profile": "French President known for centrist policies and EU leadership."
+}

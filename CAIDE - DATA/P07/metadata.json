@@ -1,0 +1,12 @@
+{
+  "id": "P07",
+  "name": "Omar Sy",
+  "gender": "Male",
+  "domain": "Entertainment",
+  "nationality": "France",
+  "date_of_birth": "1978-01-20",
+  "profession": ["Actor"],
+  "known_for": ["Lupin", "Intouchables"],
+  "affiliations": ["Netflix"],
+  "text_profile": "French actor known for charisma and international success in 'Lupin'."
+}

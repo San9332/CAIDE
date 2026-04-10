@@ -1,0 +1,12 @@
+{
+  "id": "P35",
+  "name": "Cyril Ramaphosa",
+  "gender": "Male",
+  "domain": "Politics",
+  "nationality": "South Africa",
+  "date_of_birth": "1952-11-17",
+  "profession": ["Politician"],
+  "known_for": ["President of South Africa"],
+  "affiliations": ["ANC"],
+  "text_profile": "South African President with a background in law, business, and anti-apartheid activism."
+}

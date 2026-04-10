@@ -1,0 +1,12 @@
+{
+  "id": "P03",
+  "name": "Jackie Chan",
+  "gender": "Male",
+  "domain": "Entertainment",
+  "nationality": "Hong Kong",
+  "date_of_birth": "1954-04-07",
+  "profession": ["Actor", "Martial Artist"],
+  "known_for": ["Rush Hour", "Police Story"],
+  "affiliations": ["JC Group"],
+  "text_profile": "Legendary martial artist and actor known for action-comedy films and stunts."
+}

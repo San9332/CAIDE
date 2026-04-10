@@ -1,0 +1,12 @@
+{
+  "id": "P67",
+  "name": "Jacinda Ardern",
+  "gender": "Female",
+  "domain": "Politics",
+  "nationality": "New Zealand",
+  "date_of_birth": "1980-07-26",
+  "profession": ["Politician"],
+  "known_for": ["Prime Minister of New Zealand"],
+  "affiliations": ["Labour Party"],
+  "text_profile": "Former Prime Minister known for empathetic leadership and crisis management."
+}

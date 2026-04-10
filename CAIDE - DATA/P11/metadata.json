@@ -1,0 +1,12 @@
+{
+  "id": "P11",
+  "name": "Lionel Messi",
+  "gender": "Male",
+  "domain": "Sports",
+  "nationality": "Argentina",
+  "date_of_birth": "1987-06-24",
+  "profession": ["Footballer"],
+  "known_for": ["World Cup 2022", "Ballon d'Or"],
+  "affiliations": ["Inter Miami", "Argentina National Team"],
+  "text_profile": "Widely regarded as one of the greatest football players of all time."
+}

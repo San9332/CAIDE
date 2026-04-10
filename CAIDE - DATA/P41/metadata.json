@@ -1,0 +1,12 @@
+{
+  "id": "P41",
+  "name": "Margot Robbie",
+  "gender": "Female",
+  "domain": "Entertainment",
+  "nationality": "Australia",
+  "date_of_birth": "1990-07-02",
+  "profession": ["Actor", "Producer"],
+  "known_for": ["Barbie", "Suicide Squad"],
+  "affiliations": ["LuckyChap Entertainment"],
+  "text_profile": "Australian actress and producer known for blockbuster films and critically acclaimed performances."
+}

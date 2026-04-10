@@ -1,0 +1,12 @@
+{
+  "id": "P37",
+  "name": "Deepika Padukone",
+  "gender": "Female",
+  "domain": "Entertainment",
+  "nationality": "India",
+  "date_of_birth": "1986-01-05",
+  "profession": ["Actor"],
+  "known_for": ["Bollywood films", "Global cinema"],
+  "affiliations": ["Bollywood"],
+  "text_profile": "Leading Indian actress known for global recognition and major film roles."
+}

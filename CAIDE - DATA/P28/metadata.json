@@ -1,0 +1,12 @@
+{
+  "id": "P28",
+  "name": "Mark Zuckerberg",
+  "gender": "Male",
+  "domain": "Tech",
+  "nationality": "USA",
+  "date_of_birth": "1984-05-14",
+  "profession": ["Entrepreneur"],
+  "known_for": ["Facebook", "Meta"],
+  "affiliations": ["Meta"],
+  "text_profile": "Founder of Facebook and leader in building global social media and metaverse platforms."
+}

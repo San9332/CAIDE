@@ -1,0 +1,12 @@
+{
+  "id": "P14",
+  "name": "LeBron James",
+  "gender": "Male",
+  "domain": "Sports",
+  "nationality": "USA",
+  "date_of_birth": "1984-12-30",
+  "profession": ["Basketball Player"],
+  "known_for": ["NBA Championships"],
+  "affiliations": ["LA Lakers"],
+  "text_profile": "One of the greatest basketball players in NBA history."
+}

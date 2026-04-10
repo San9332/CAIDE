@@ -1,0 +1,12 @@
+{
+  "id": "P27",
+  "name": "Sundar Pichai",
+  "gender": "Male",
+  "domain": "Tech",
+  "nationality": "India",
+  "date_of_birth": "1972-06-10",
+  "profession": ["CEO"],
+  "known_for": ["Google leadership"],
+  "affiliations": ["Google", "Alphabet"],
+  "text_profile": "CEO of Alphabet, leading global advancements in AI, search, and cloud computing."
+}

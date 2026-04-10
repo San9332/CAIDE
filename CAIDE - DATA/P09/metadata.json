@@ -1,0 +1,12 @@
+{
+  "id": "P09",
+  "name": "Ken Watanabe",
+  "gender": "Male",
+  "domain": "Entertainment",
+  "nationality": "Japan",
+  "date_of_birth": "1959-10-21",
+  "profession": ["Actor"],
+  "known_for": ["The Last Samurai", "Inception"],
+  "affiliations": ["Japanese Cinema"],
+  "text_profile": "Internationally acclaimed Japanese actor bridging Hollywood and Japanese cinema."
+}

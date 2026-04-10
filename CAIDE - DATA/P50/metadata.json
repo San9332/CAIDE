@@ -1,0 +1,12 @@
+{
+  "id": "P50",
+  "name": "Sania Mirza",
+  "gender": "Female",
+  "domain": "Sports",
+  "nationality": "India",
+  "date_of_birth": "1986-11-15",
+  "profession": ["Tennis Player"],
+  "known_for": ["Grand Slam doubles titles"],
+  "affiliations": ["WTA"],
+  "text_profile": "One of India’s most successful tennis players."
+}

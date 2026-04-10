@@ -1,0 +1,12 @@
+{
+  "id": "P06",
+  "name": "Wagner Moura",
+  "gender": "Male",
+  "domain": "Entertainment",
+  "nationality": "Brazil",
+  "date_of_birth": "1976-06-27",
+  "profession": ["Actor"],
+  "known_for": ["Narcos"],
+  "affiliations": ["Netflix"],
+  "text_profile": "Brazilian actor globally recognized for portraying Pablo Escobar."
+}

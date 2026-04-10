@@ -1,0 +1,12 @@
+{
+  "id": "P53",
+  "name": "PV Sindhu",
+  "gender": "Female",
+  "domain": "Sports",
+  "nationality": "India",
+  "date_of_birth": "1995-07-05",
+  "profession": ["Badminton Player"],
+  "known_for": ["Olympic medals", "World Championship"],
+  "affiliations": ["Badminton Association of India"],
+  "text_profile": "One of India’s most successful badminton players with Olympic and world titles."
+}

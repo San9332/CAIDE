@@ -1,0 +1,12 @@
+{
+  "id": "P15",
+  "name": "Virat Kohli",
+  "gender": "Male",
+  "domain": "Sports",
+  "nationality": "India",
+  "date_of_birth": "1988-11-05",
+  "profession": ["Cricketer"],
+  "known_for": ["ICC rankings"],
+  "affiliations": ["India National Team"],
+  "text_profile": "Modern cricket legend known for consistency and leadership."
+}

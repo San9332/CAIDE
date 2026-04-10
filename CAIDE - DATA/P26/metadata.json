@@ -1,0 +1,12 @@
+{
+  "id": "P26",
+  "name": "Elon Musk",
+  "gender": "Male",
+  "domain": "Tech",
+  "nationality": "USA",
+  "date_of_birth": "1971-06-28",
+  "profession": ["Entrepreneur"],
+  "known_for": ["Tesla", "SpaceX"],
+  "affiliations": ["Tesla", "SpaceX", "xAI"],
+  "text_profile": "Tech entrepreneur driving innovation in electric vehicles, AI, and space exploration."
+}

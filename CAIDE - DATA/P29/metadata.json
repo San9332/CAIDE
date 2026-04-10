@@ -1,0 +1,12 @@
+{
+  "id": "P29",
+  "name": "Jack Ma",
+  "gender": "Male",
+  "domain": "Tech",
+  "nationality": "China",
+  "date_of_birth": "1964-09-10",
+  "profession": ["Entrepreneur"],
+  "known_for": ["Alibaba Group"],
+  "affiliations": ["Alibaba"],
+  "text_profile": "Founder of Alibaba and pioneer of large-scale e-commerce in China."
+}

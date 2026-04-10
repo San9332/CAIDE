@@ -1,0 +1,12 @@
+{
+  "id": "P46",
+  "name": "Serena Williams",
+  "gender": "Female",
+  "domain": "Sports",
+  "nationality": "USA",
+  "date_of_birth": "1981-09-26",
+  "profession": ["Tennis Player"],
+  "known_for": ["Grand Slam titles"],
+  "affiliations": ["WTA"],
+  "text_profile": "One of the greatest tennis players in history with multiple Grand Slam titles."
+}

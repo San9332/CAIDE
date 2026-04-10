@@ -1,0 +1,12 @@
+{
+  "id": "P55",
+  "name": "Yuna Kim",
+  "gender": "Female",
+  "domain": "Sports",
+  "nationality": "South Korea",
+  "date_of_birth": "1990-09-05",
+  "profession": ["Figure Skater"],
+  "known_for": ["Olympic gold medal"],
+  "affiliations": ["Korean Skating Union"],
+  "text_profile": "Legendary figure skater known for elegance and Olympic success."
+}

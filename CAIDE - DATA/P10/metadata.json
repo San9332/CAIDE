@@ -1,0 +1,12 @@
+{
+  "id": "P10",
+  "name": "Chris Hemsworth",
+  "gender": "Male",
+  "domain": "Entertainment",
+  "nationality": "Australia",
+  "date_of_birth": "1983-08-11",
+  "profession": ["Actor"],
+  "known_for": ["Thor", "Avengers"],
+  "affiliations": ["Marvel Studios"],
+  "text_profile": "Global superstar known for portraying Thor in the Marvel Cinematic Universe."
+}

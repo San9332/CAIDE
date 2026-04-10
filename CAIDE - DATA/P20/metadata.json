@@ -1,0 +1,12 @@
+{
+  "id": "P20",
+  "name": "Eliud Kipchoge",
+  "gender": "Male",
+  "domain": "Sports",
+  "nationality": "Kenya",
+  "date_of_birth": "1984-11-05",
+  "profession": ["Marathon Runner"],
+  "known_for": ["Sub-2 hour marathon"],
+  "affiliations": ["NN Running Team"],
+  "text_profile": "Greatest marathon runner in history."
+}

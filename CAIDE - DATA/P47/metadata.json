@@ -1,0 +1,12 @@
+{
+  "id": "P47",
+  "name": "Simone Biles",
+  "gender": "Female",
+  "domain": "Sports",
+  "nationality": "USA",
+  "date_of_birth": "1997-03-14",
+  "profession": ["Gymnast"],
+  "known_for": ["Olympic gold medals"],
+  "affiliations": ["USA Gymnastics"],
+  "text_profile": "Most decorated gymnast known for redefining the sport with complex routines."
+}

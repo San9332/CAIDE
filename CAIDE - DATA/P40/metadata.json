@@ -1,0 +1,12 @@
+{
+  "id": "P40",
+  "name": "Emma Watson",
+  "gender": "Female",
+  "domain": "Entertainment",
+  "nationality": "UK",
+  "date_of_birth": "1990-04-15",
+  "profession": ["Actor", "Activist"],
+  "known_for": ["Harry Potter", "UN advocacy"],
+  "affiliations": ["UN Women"],
+  "text_profile": "Actor and activist known for both film success and gender equality advocacy."
+}

@@ -1,0 +1,12 @@
+{
+  "id": "P44",
+  "name": "Salma Hayek",
+  "gender": "Female",
+  "domain": "Entertainment",
+  "nationality": "Mexico",
+  "date_of_birth": "1966-09-02",
+  "profession": ["Actor", "Producer"],
+  "known_for": ["Frida", "Eternals"],
+  "affiliations": ["Hollywood"],
+  "text_profile": "Mexican-American actress known for her work in Hollywood and advocacy efforts."
+}

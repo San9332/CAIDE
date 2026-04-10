@@ -1,0 +1,12 @@
+{
+  "id": "P61",
+  "name": "Susan Wojcicki",
+  "gender": "Female",
+  "domain": "Tech",
+  "nationality": "USA",
+  "date_of_birth": "1968-07-05",
+  "profession": ["Business Executive"],
+  "known_for": ["YouTube CEO"],
+  "affiliations": ["Google", "YouTube"],
+  "text_profile": "Former CEO of YouTube who played a key role in Google's growth."
+}

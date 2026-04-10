@@ -1,0 +1,12 @@
+{
+  "id": "P36",
+  "name": "Scarlett Johansson",
+  "gender": "Female",
+  "domain": "Entertainment",
+  "nationality": "USA",
+  "date_of_birth": "1984-11-22",
+  "profession": ["Actor"],
+  "known_for": ["Black Widow", "Avengers"],
+  "affiliations": ["Marvel Studios"],
+  "text_profile": "One of the highest-grossing actresses known for action and drama roles."
+}

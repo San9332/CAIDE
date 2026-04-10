@@ -1,0 +1,12 @@
+{
+  "id": "P52",
+  "name": "Alex Morgan",
+  "gender": "Female",
+  "domain": "Sports",
+  "nationality": "USA",
+  "date_of_birth": "1989-07-02",
+  "profession": ["Footballer"],
+  "known_for": ["World Cup wins"],
+  "affiliations": ["US Women's National Team"],
+  "text_profile": "Prominent soccer player known for scoring and leadership."
+}

@@ -1,0 +1,12 @@
+{
+  "id": "P32",
+  "name": "Narendra Modi",
+  "gender": "Male",
+  "domain": "Politics",
+  "nationality": "India",
+  "date_of_birth": "1950-09-17",
+  "profession": ["Politician"],
+  "known_for": ["Prime Minister of India"],
+  "affiliations": ["BJP"],
+  "text_profile": "Prime Minister of India known for economic and political reforms."
+}

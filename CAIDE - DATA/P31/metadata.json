@@ -1,0 +1,12 @@
+{
+  "id": "P31",
+  "name": "Barack Obama",
+  "gender": "Male",
+  "domain": "Politics",
+  "nationality": "USA",
+  "date_of_birth": "1961-08-04",
+  "profession": ["Politician"],
+  "known_for": ["44th U.S. President"],
+  "affiliations": ["Democratic Party"],
+  "text_profile": "Former U.S. President known for leadership, diplomacy, and global influence."
+}

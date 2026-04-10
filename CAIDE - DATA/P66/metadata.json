@@ -1,0 +1,12 @@
+{
+  "id": "P66",
+  "name": "Kamala Harris",
+  "gender": "Female",
+  "domain": "Politics",
+  "nationality": "USA",
+  "date_of_birth": "1964-10-20",
+  "profession": ["Politician"],
+  "known_for": ["Vice President of the United States"],
+  "affiliations": ["Democratic Party"],
+  "text_profile": "First female Vice President of the United States."
+}

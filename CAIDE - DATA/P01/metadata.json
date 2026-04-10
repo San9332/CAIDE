@@ -1,0 +1,12 @@
+{
+  "id": "P01",
+  "name": "Leonardo DiCaprio",
+  "gender": "Male",
+  "domain": "Entertainment",
+  "nationality": "USA",
+  "date_of_birth": "1974-11-11",
+  "profession": ["Actor", "Producer"],
+  "known_for": ["Titanic", "Inception", "The Revenant"],
+  "affiliations": ["Appian Way Productions"],
+  "text_profile": "Academy Award-winning actor known for diverse roles and environmental activism."
+}

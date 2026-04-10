@@ -1,0 +1,12 @@
+{
+  "id": "P02",
+  "name": "Shah Rukh Khan",
+  "gender": "Male",
+  "domain": "Entertainment",
+  "nationality": "India",
+  "date_of_birth": "1965-11-02",
+  "profession": ["Actor", "Producer"],
+  "known_for": ["Bollywood films", "Global stardom"],
+  "affiliations": ["Red Chillies Entertainment"],
+  "text_profile": "One of the most influential actors globally, known as the King of Bollywood."
+}

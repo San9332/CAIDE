@@ -1,0 +1,12 @@
+{
+  "id": "P05",
+  "name": "Jean Dujardin",
+  "gender": "Male",
+  "domain": "Entertainment",
+  "nationality": "France",
+  "date_of_birth": "1972-06-19",
+  "profession": ["Actor"],
+  "known_for": ["The Artist"],
+  "affiliations": ["French Cinema"],
+  "text_profile": "Oscar-winning French actor known for silent film revival 'The Artist'."
+}

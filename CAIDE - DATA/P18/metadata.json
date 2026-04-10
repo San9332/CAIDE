@@ -1,0 +1,12 @@
+{
+  "id": "P18",
+  "name": "Mohamed Salah",
+  "gender": "Male",
+  "domain": "Sports",
+  "nationality": "Egypt",
+  "date_of_birth": "1992-06-15",
+  "profession": ["Footballer"],
+  "known_for": ["Premier League success"],
+  "affiliations": ["Liverpool FC"],
+  "text_profile": "One of Africa’s greatest footballers."
+}

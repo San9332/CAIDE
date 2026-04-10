@@ -1,0 +1,12 @@
+{
+  "id": "P65",
+  "name": "Reshma Saujani",
+  "gender": "Female",
+  "domain": "Tech",
+  "nationality": "USA",
+  "date_of_birth": "1975-11-18",
+  "profession": ["Entrepreneur"],
+  "known_for": ["Girls Who Code"],
+  "affiliations": ["Girls Who Code"],
+  "text_profile": "Founder of Girls Who Code promoting gender diversity in technology."
+}

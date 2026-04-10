@@ -1,0 +1,12 @@
+{
+  "id": "P17",
+  "name": "Novak Djokovic",
+  "gender": "Male",
+  "domain": "Sports",
+  "nationality": "Serbia",
+  "date_of_birth": "1987-05-22",
+  "profession": ["Tennis Player"],
+  "known_for": ["Grand Slam titles"],
+  "affiliations": ["ATP"],
+  "text_profile": "One of the greatest tennis players in history."
+}

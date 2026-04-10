@@ -1,0 +1,12 @@
+{
+  "id": "P70",
+  "name": "Tsai Ing-wen",
+  "gender": "Female",
+  "domain": "Politics",
+  "nationality": "Taiwan",
+  "date_of_birth": "1956-08-31",
+  "profession": ["Politician"],
+  "known_for": ["President of Taiwan"],
+  "affiliations": ["Democratic Progressive Party"],
+  "text_profile": "President of Taiwan known for economic policy and international diplomacy."
+}

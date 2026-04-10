@@ -1,0 +1,12 @@
+{
+  "id": "P13",
+  "name": "Kylian Mbappe",
+  "gender": "Male",
+  "domain": "Sports",
+  "nationality": "France",
+  "date_of_birth": "1998-12-20",
+  "profession": ["Footballer"],
+  "known_for": ["World Cup 2018"],
+  "affiliations": ["PSG", "France National Team"],
+  "text_profile": "Elite footballer known for speed, skill, and goal-scoring ability."
+}

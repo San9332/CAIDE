@@ -1,0 +1,12 @@
+{
+  "id": "P59",
+  "name": "Adele",
+  "gender": "Female",
+  "domain": "Music",
+  "nationality": "UK",
+  "date_of_birth": "1988-05-05",
+  "profession": ["Singer"],
+  "known_for": ["Grammy Awards", "Power ballads"],
+  "affiliations": ["Columbia Records"],
+  "text_profile": "Globally recognized singer known for emotional vocal performances."
+}

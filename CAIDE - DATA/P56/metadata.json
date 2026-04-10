@@ -1,0 +1,12 @@
+{
+  "id": "P56",
+  "name": "Taylor Swift",
+  "gender": "Female",
+  "domain": "Music",
+  "nationality": "USA",
+  "date_of_birth": "1989-12-13",
+  "profession": ["Singer", "Songwriter"],
+  "known_for": ["Grammy Awards", "Global tours"],
+  "affiliations": ["Republic Records"],
+  "text_profile": "One of the most influential global music artists known for storytelling and record-breaking tours."
+}

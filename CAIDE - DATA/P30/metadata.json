@@ -1,0 +1,12 @@
+{
+  "id": "P30",
+  "name": "Sam Altman",
+  "gender": "Male",
+  "domain": "Tech",
+  "nationality": "USA",
+  "date_of_birth": "1985-04-22",
+  "profession": ["Entrepreneur"],
+  "known_for": ["OpenAI leadership"],
+  "affiliations": ["OpenAI"],
+  "text_profile": "AI leader focused on advancing artificial intelligence technologies and deployment."
+}

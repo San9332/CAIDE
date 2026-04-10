@@ -1,0 +1,12 @@
+{
+  "id": "P57",
+  "name": "Beyoncé",
+  "gender": "Female",
+  "domain": "Music",
+  "nationality": "USA",
+  "date_of_birth": "1981-09-04",
+  "profession": ["Singer", "Performer"],
+  "known_for": ["Grammy Awards", "Cultural influence"],
+  "affiliations": ["Parkwood Entertainment"],
+  "text_profile": "Global icon known for music excellence, performance, and cultural impact."
+}

@@ -1,0 +1,12 @@
+{
+  "id": "P12",
+  "name": "Cristiano Ronaldo",
+  "gender": "Male",
+  "domain": "Sports",
+  "nationality": "Portugal",
+  "date_of_birth": "1985-02-05",
+  "profession": ["Footballer"],
+  "known_for": ["Champions League titles", "Ballon d'Or"],
+  "affiliations": ["Al Nassr", "Portugal National Team"],
+  "text_profile": "One of football’s most prolific scorers and global icons."
+}

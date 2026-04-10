@@ -1,0 +1,12 @@
+{
+  "id": "P64",
+  "name": "Melinda French Gates",
+  "gender": "Female",
+  "domain": "Tech",
+  "nationality": "USA",
+  "date_of_birth": "1964-08-15",
+  "profession": ["Philanthropist"],
+  "known_for": ["Global health initiatives"],
+  "affiliations": ["Bill & Melinda Gates Foundation"],
+  "text_profile": "Philanthropist focused on global health, education, and gender equality."
+}

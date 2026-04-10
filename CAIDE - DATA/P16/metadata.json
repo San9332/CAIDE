@@ -1,0 +1,12 @@
+{
+  "id": "P16",
+  "name": "Usain Bolt",
+  "gender": "Male",
+  "domain": "Sports",
+  "nationality": "Jamaica",
+  "date_of_birth": "1986-08-21",
+  "profession": ["Sprinter"],
+  "known_for": ["Olympic gold medals"],
+  "affiliations": ["Jamaica Athletics"],
+  "text_profile": "Fastest man in history and Olympic legend."
+}
