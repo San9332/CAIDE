@@ -11,6 +11,8 @@ from insightface.app import FaceAnalysis
 DATASET_ROOT = Path("CAIDE_DATA")
 SIMILARITY_THRESHOLD = 0.10
 
+app = FastAPI(title="CAIDE Matcher API")
+
 face_app = None
 gallery_matrix = None
 gallery_ids = None
@@ -104,6 +106,29 @@ def get_face_app():
         print("InsightFace ready.")
     return face_app
 
+def get_gallery():
+    global gallery_matrix, gallery_ids, metadata_map, photo_map
+    if gallery_matrix is None:
+        print("Loading gallery...")
+        gallery_matrix, gallery_ids, metadata_map, photo_map = load_gallery(DATASET_ROOT)
+        print("Gallery loaded with", len(gallery_ids), "identities")
+    return gallery_matrix, gallery_ids, metadata_map, photo_map
+
+
+def get_face_app():
+    global face_app
+    from insightface.app import FaceAnalysis
+    if face_app is None:
+        print("Loading InsightFace...")
+        face_app = FaceAnalysis(
+            name="buffalo_l",
+            providers=["CPUExecutionProvider"]
+        )
+        face_app.prepare(ctx_id=0, det_size=(320, 320))
+        print("InsightFace ready.")
+    return face_app
+
+
 app = FastAPI(title="CAIDE Matcher API")
 
 @app.get("/")
@@ -116,70 +141,76 @@ def root_head():
 
 @app.post("/match")
 async def match_face(file: UploadFile = File(...)):
-    contents = await file.read()
+    try:
+        contents = await file.read()
 
-    np_arr = np.frombuffer(contents, np.uint8)
-    image = cv2.imdecode(np_arr, cv2.IMREAD_COLOR)
+        np_arr = np.frombuffer(contents, np.uint8)
+        image = cv2.imdecode(np_arr, cv2.IMREAD_COLOR)
 
-    if image is None:
-        raise HTTPException(status_code=400, detail="Invalid image file.")
+        if image is None:
+            raise HTTPException(status_code=400, detail="Invalid image file.")
 
-    face_model = get_face_app()
-    faces = face_model.get(image)
-    if not faces:
-        return {
-            "match_found": False,
-            "message": "No face detected."
+        face_model = get_face_app()
+        faces = face_model.get(image)
+
+        if not faces:
+            return {
+                "match_found": False,
+                "message": "No face detected."
+            }
+
+        face = max(
+            faces,
+            key=lambda f: (f.bbox[2] - f.bbox[0]) * (f.bbox[3] - f.bbox[1])
+        )
+
+        query_emb = np.asarray(face.embedding, dtype=np.float32)
+        query_emb = l2_normalize(query_emb)
+
+        gallery_matrix, gallery_ids, metadata_map, photo_map = get_gallery()
+        top3 = top_k_matches(query_emb, gallery_matrix, gallery_ids, k=3)
+
+        best_id, best_score = top3[0]
+        best_meta = metadata_map[best_id]
+
+        best_candidate = {
+            "identity_id": best_id,
+            "name": best_meta.get("name", best_id),
+            "score": round(best_score, 4),
+            "confidence": confidence_tier(best_score),
+            "gender": best_meta.get("gender", "N/A"),
+            "domain": best_meta.get("domain", "N/A"),
+            "nationality": best_meta.get("nationality", "N/A"),
+            "date_of_birth": best_meta.get("date_of_birth", "N/A"),
+            "profession": best_meta.get("profession", []),
+            "known_for": best_meta.get("known_for", []),
+            "affiliations": best_meta.get("affiliations", []),
+            "text_profile": best_meta.get("text_profile", "N/A"),
+            "photo_path": photo_map.get(best_id)
         }
 
-    face = max(
-        faces,
-        key=lambda f: (f.bbox[2] - f.bbox[0]) * (f.bbox[3] - f.bbox[1])
-    )
+        alternatives = []
+        for pid, score in top3[1:]:
+            meta = metadata_map[pid]
+            alternatives.append({
+                "identity_id": pid,
+                "name": meta.get("name", pid),
+                "score": round(score, 4),
+                "confidence": confidence_tier(score)
+            })
 
-    query_emb = np.asarray(face.embedding, dtype=np.float32)
-    query_emb = l2_normalize(query_emb)
+        accepted = best_score >= SIMILARITY_THRESHOLD
 
-    gallery_matrix, gallery_ids, metadata_map, photo_map = get_gallery()
-    top3 = top_k_matches(query_emb, gallery_matrix, gallery_ids, k=3)
+        return {
+            "match_found": accepted,
+            "best_candidate": best_candidate,
+            "alternatives": alternatives,
+            "threshold": SIMILARITY_THRESHOLD,
+            "message": "Match accepted" if accepted else "Below threshold / unknown"
+        }
 
-    best_id, best_score = top3[0]
-    best_meta = metadata_map[best_id]
-
-    best_candidate = {
-        "identity_id": best_id,
-        "name": best_meta.get("name", best_id),
-        "score": round(best_score, 4),
-        "confidence": confidence_tier(best_score),
-
-        "gender": best_meta.get("gender", "N/A"),
-        "domain": best_meta.get("domain", "N/A"),
-        "nationality": best_meta.get("nationality", "N/A"),
-        "date_of_birth": best_meta.get("date_of_birth", "N/A"),
-        "profession": best_meta.get("profession", []),
-        "known_for": best_meta.get("known_for", []),
-        "affiliations": best_meta.get("affiliations", []),
-        "text_profile": best_meta.get("text_profile", "N/A"),
-
-        "photo_path": photo_map.get(best_id)
-    }
-
-    alternatives = []
-    for pid, score in top3[1:]:
-        meta = metadata_map[pid]
-        alternatives.append({
-            "identity_id": pid,
-            "name": meta.get("name", pid),
-            "score": round(score, 4),
-            "confidence": confidence_tier(score)
-        })
-
-    accepted = best_score >= SIMILARITY_THRESHOLD
-
-    return {
-        "match_found": accepted,
-        "best_candidate": best_candidate,
-        "alternatives": alternatives,
-        "threshold": SIMILARITY_THRESHOLD,
-        "message": "Match accepted" if accepted else "Below threshold / unknown"
-    }
+    except HTTPException:
+        raise
+    except Exception as e:
+        print("MATCH ERROR:", repr(e))
+        raise HTTPException(status_code=500, detail=f"Server error: {str(e)}")
