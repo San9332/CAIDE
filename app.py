@@ -8,7 +8,7 @@ from fastapi import FastAPI, File, UploadFile, HTTPException
 from insightface.app import FaceAnalysis
 
 
-DATASET_ROOT = Path("CAIDE - DATA")
+DATASET_ROOT = Path("CAIDE_DATA")
 SIMILARITY_THRESHOLD = 0.10
 
 
