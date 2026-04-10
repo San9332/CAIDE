@@ -11,6 +11,12 @@ from insightface.app import FaceAnalysis
 DATASET_ROOT = Path("CAIDE_DATA")
 SIMILARITY_THRESHOLD = 0.10
 
+face_app = None
+gallery_matrix = None
+gallery_ids = None
+metadata_map = None
+photo_map = None
+
 
 def l2_normalize(vec: np.ndarray) -> np.ndarray:
     norm = np.linalg.norm(vec)
@@ -76,26 +82,31 @@ def confidence_tier(score: float) -> str:
         return "MED"
     return "LOW"
 
+def get_gallery():
+    global gallery_matrix, gallery_ids, metadata_map, photo_map
+    if gallery_matrix is None:
+        print("Loading gallery...")
+        gallery_matrix, gallery_ids, metadata_map, photo_map = load_gallery(DATASET_ROOT)
+        print("Gallery loaded:", len(gallery_ids))
+    return gallery_matrix, gallery_ids, metadata_map, photo_map
+
+
+def get_face_app():
+    global face_app
+    if face_app is None:
+        print("Loading InsightFace...")
+        from insightface.app import FaceAnalysis
+        face_app = FaceAnalysis(
+            name="buffalo_l",
+            providers=["CPUExecutionProvider"]
+        )
+        face_app.prepare(ctx_id=0, det_size=(320, 320))  # 🔥 reduced
+        print("InsightFace ready.")
+    return face_app
 
 app = FastAPI(title="CAIDE Matcher API")
 
-print("Loading gallery...")
-try:
-    gallery_matrix, gallery_ids, metadata_map, photo_map = load_gallery(DATASET_ROOT)
-    print("Server ready with", len(gallery_ids), "identities")
-except Exception as e:
-    print("ERROR loading dataset:", str(e))
-    raise e
-print(f"Loaded {len(gallery_ids)} identities.")
-print("Server ready with", len(gallery_ids), "identities")
 
-print("Loading InsightFace...")
-face_app = FaceAnalysis(
-    name="buffalo_l",
-    providers=["CPUExecutionProvider"]
-)
-face_app.prepare(ctx_id=0, det_size=(640, 640))
-print("InsightFace ready.")
 
 
 @app.get("/")
@@ -113,7 +124,8 @@ async def match_face(file: UploadFile = File(...)):
     if image is None:
         raise HTTPException(status_code=400, detail="Invalid image file.")
 
-    faces = face_app.get(image)
+    face_model = get_face_app()
+    faces = face_model.get(image)
     if not faces:
         return {
             "match_found": False,
@@ -128,6 +140,7 @@ async def match_face(file: UploadFile = File(...)):
     query_emb = np.asarray(face.embedding, dtype=np.float32)
     query_emb = l2_normalize(query_emb)
 
+    gallery_matrix, gallery_ids, metadata_map, photo_map = get_gallery()
     top3 = top_k_matches(query_emb, gallery_matrix, gallery_ids, k=3)
 
     best_id, best_score = top3[0]
