@@ -80,11 +80,20 @@ def confidence_tier(score: float) -> str:
 app = FastAPI(title="CAIDE Matcher API")
 
 print("Loading gallery...")
-gallery_matrix, gallery_ids, metadata_map, photo_map = load_gallery(DATASET_ROOT)
+try:
+    gallery_matrix, gallery_ids, metadata_map, photo_map = load_gallery(DATASET_ROOT)
+    print("Server ready with", len(gallery_ids), "identities")
+except Exception as e:
+    print("ERROR loading dataset:", str(e))
+    raise e
 print(f"Loaded {len(gallery_ids)} identities.")
+print("Server ready with", len(gallery_ids), "identities")
 
 print("Loading InsightFace...")
-face_app = FaceAnalysis(name="buffalo_l", providers=["CPUExecutionProvider"])
+face_app = FaceAnalysis(
+    name="buffalo_l",
+    providers=["CPUExecutionProvider"]
+)
 face_app.prepare(ctx_id=0, det_size=(640, 640))
 print("InsightFace ready.")
 
